@@ -1,0 +1,17 @@
+#lang eopl
+(define list-tails
+  (lambda (list)
+    (letrec
+        (
+         (lista
+          (lambda (lista)
+            (cond
+              [(eqv? lst '()) empty]
+              [else (cons list)(lista (cdr lst))]
+              )
+            )
+          )
+         )
+      )
+    )
+  )
